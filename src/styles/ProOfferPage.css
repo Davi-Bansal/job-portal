@@ -1,0 +1,613 @@
+/* ===================================
+   PRO OFFER PAGE - COMPLETE STYLES
+   =================================== */
+
+.pro-offer-page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===================================
+   HEADER
+   =================================== */
+
+.offer-header {
+  background: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.back-link:hover {
+  color: #1d4ed8;
+  transform: translateX(-5px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 28px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===================================
+   HERO SECTION
+   =================================== */
+
+.offer-hero {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #92400e;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(146, 64, 14, 0.2);
+}
+
+.badge-icon {
+  font-size: 18px;
+}
+
+.offer-title {
+  font-size: 56px;
+  font-weight: 800;
+  color: #78350f;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #ea580c;
+  position: relative;
+}
+
+.offer-subtitle {
+  font-size: 20px;
+  color: #92400e;
+  margin-bottom: 30px;
+}
+
+.offer-timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(234, 88, 12, 0.1);
+  border: 2px solid #ea580c;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  color: #c2410c;
+}
+
+.timer-icon {
+  font-size: 20px;
+}
+
+/* Hero Decorations */
+.hero-decorations {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.decoration {
+  position: absolute;
+  font-size: 60px;
+  opacity: 0.3;
+}
+
+.tree-left {
+  left: 10%;
+  top: 20%;
+}
+
+.tree-right {
+  right: 10%;
+  top: 30%;
+}
+
+.snowman {
+  right: 15%;
+  bottom: 10%;
+}
+
+.snowflakes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.snowflake {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  animation: fall 10s linear infinite;
+}
+
+.snowflake:nth-child(1) { left: 10%; animation-delay: 0s; }
+.snowflake:nth-child(2) { left: 30%; animation-delay: 2s; }
+.snowflake:nth-child(3) { left: 60%; animation-delay: 4s; }
+.snowflake:nth-child(4) { left: 80%; animation-delay: 6s; }
+
+@keyframes fall {
+  0% {
+    top: -10%;
+    opacity: 1;
+  }
+  100% {
+    top: 110%;
+    opacity: 0.3;
+  }
+}
+
+/* ===================================
+   PRICING SECTION
+   =================================== */
+
+.pricing-section {
+  padding: 80px 0;
+  background: #f9fafb;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.pricing-card {
+  background: white;
+  border: 3px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.selected {
+  border-color: #2563eb;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
+}
+
+.pricing-card.popular {
+  border-color: #10b981;
+}
+
+.popular-badge,
+.value-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+.value-badge {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+}
+
+.plan-header {
+  margin-bottom: 20px;
+}
+
+.plan-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 5px;
+}
+
+.plan-duration {
+  color: #666;
+  font-size: 14px;
+}
+
+.plan-pricing {
+  margin-bottom: 30px;
+}
+
+.original-price {
+  font-size: 16px;
+  color: #9ca3af;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+}
+
+.discounted-price {
+  font-size: 40px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.savings-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.plan-features {
+  margin-bottom: 30px;
+}
+
+.feature {
+  padding: 10px 0;
+  color: #333;
+  font-size: 15px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.feature:last-child {
+  border-bottom: none;
+}
+
+.select-plan-btn {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #2563eb;
+  background: white;
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.select-plan-btn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.select-plan-btn.selected {
+  background: #2563eb;
+  color: white;
+}
+
+/* Claim Section */
+.claim-section {
+  text-align: center;
+}
+
+.claim-offer-btn {
+  background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+  color: white;
+  border: none;
+  padding: 18px 50px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(234, 88, 12, 0.4);
+}
+
+.claim-offer-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(234, 88, 12, 0.5);
+}
+
+.claim-offer-btn.large {
+  padding: 20px 60px;
+  font-size: 20px;
+}
+
+.money-back {
+  margin-top: 15px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===================================
+   BENEFITS SECTION
+   =================================== */
+
+.benefits-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 30px;
+  background: #f9fafb;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  background: #eff6ff;
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.benefit-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ===================================
+   TESTIMONIALS SECTION
+   =================================== */
+
+.testimonials-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.stars {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-author strong {
+  display: block;
+  color: #111;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.testimonial-author span {
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===================================
+   FAQ SECTION
+   =================================== */
+
+.faq-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.faq-item {
+  padding: 25px;
+  background: #f9fafb;
+  border-radius: 12px;
+  border-left: 4px solid #2563eb;
+}
+
+.faq-item h4 {
+  color: #111;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ===================================
+   FINAL CTA SECTION
+   =================================== */
+
+.final-cta {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: white;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta-note {
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+.offer-footer {
+  background: #1f2937;
+  color: #d1d5db;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.offer-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #60a5fa;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+@media (max-width: 768px) {
+  .offer-title {
+    font-size: 36px;
+  }
+  
+  .offer-subtitle {
+    font-size: 16px;
+  }
+  
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefits-grid,
+  .testimonials-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-decorations {
+    display: none;
+  }
+  
+  .offer-footer .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .offer-title {
+    font-size: 28px;
+  }
+  
+  .claim-offer-btn {
+    padding: 14px 30px;
+    font-size: 16px;
+  }
+  
+  .claim-offer-btn.large {
+    padding: 16px 40px;
+    font-size: 18px;
+  }
+}

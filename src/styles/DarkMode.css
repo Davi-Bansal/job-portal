@@ -1,0 +1,575 @@
+/* ================= DARK MODE STYLES ================= */
+
+/* Dark Mode Toggle */
+body.dark-mode {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.dark-mode .page {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.dark-mode .container {
+  background: transparent;
+}
+
+/* ================= TOPBAR ================= */
+.dark-mode .topbar {
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+.dark-mode .topbar h2 {
+  color: #f1f5f9;
+}
+
+.dark-mode .icon-btn {
+  background: #334155;
+  color: #e2e8f0;
+  border: 1px solid #475569;
+}
+
+.dark-mode .icon-btn:hover {
+  background: #475569;
+  color: #ffffff;
+}
+
+.dark-mode .icon-btn.active {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+/* ================= STATS CARDS ================= */
+.dark-mode .stat-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+}
+
+.dark-mode .stat-card h4 {
+  color: #f1f5f9;
+}
+
+.dark-mode .stat-card p {
+  color: #cbd5e1;
+}
+
+.dark-mode .stat-card.blue {
+  background: linear-gradient(135deg, #1e3a8a, #1e40af);
+}
+
+.dark-mode .stat-card.purple {
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+}
+
+.dark-mode .stat-card.green {
+  background: linear-gradient(135deg, #047857, #059669);
+}
+
+.dark-mode .stat-card.red {
+  background: linear-gradient(135deg, #b91c1c, #dc2626);
+}
+
+/* ================= CONTROLS SECTION ================= */
+.dark-mode .controls-section {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.dark-mode .search-input {
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 2px solid #334155;
+}
+
+.dark-mode .search-input::placeholder {
+  color: #64748b;
+}
+
+.dark-mode .search-input:focus {
+  border-color: #3b82f6;
+  background: #1e293b;
+}
+
+.dark-mode .clear-search-btn {
+  background: #334155;
+  color: #e2e8f0;
+}
+
+.dark-mode .clear-search-btn:hover {
+  background: #475569;
+}
+
+/* ================= FILTER BUTTONS ================= */
+.dark-mode .filter-btn {
+  background: #334155;
+  color: #e2e8f0;
+  border: 2px solid #475569;
+}
+
+.dark-mode .filter-btn:hover {
+  background: #475569;
+  border-color: #64748b;
+}
+
+.dark-mode .filter-btn.active {
+  background: #3b82f6;
+  color: #ffffff;
+  border-color: #3b82f6;
+}
+
+/* ================= SORT SECTION ================= */
+.dark-mode .sort-section {
+  color: #e2e8f0;
+}
+
+.dark-mode .sort-section label {
+  color: #cbd5e1;
+}
+
+.dark-mode .sort-select {
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 2px solid #334155;
+}
+
+.dark-mode .sort-select:focus {
+  border-color: #3b82f6;
+  background: #1e293b;
+}
+
+/* ================= COMPARISON BAR ================= */
+.dark-mode .comparison-bar {
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+.dark-mode .comparison-info {
+  color: #cbd5e1;
+}
+
+.dark-mode .selected-count {
+  color: #3b82f6;
+}
+
+/* ================= EMPTY STATE ================= */
+.dark-mode .empty-state {
+  background: #1e293b;
+  border: 2px dashed #334155;
+}
+
+.dark-mode .empty-state h3 {
+  color: #f1f5f9;
+}
+
+.dark-mode .empty-state p {
+  color: #94a3b8;
+}
+
+/* ================= RESULTS HEADER ================= */
+.dark-mode .results-header {
+  border-bottom: 2px solid #334155;
+}
+
+.dark-mode .results-header h3 {
+  color: #f1f5f9;
+}
+
+.dark-mode .results-count {
+  color: #94a3b8;
+}
+
+/* ================= APPLICATION CARDS ================= */
+.dark-mode .application-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .application-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.2);
+}
+
+.dark-mode .application-card.selected-for-compare {
+  border-color: #3b82f6;
+  background: #1e3a5f;
+}
+
+.dark-mode .card-header h3 {
+  color: #f1f5f9;
+}
+
+.dark-mode .job-description {
+  color: #cbd5e1;
+}
+
+/* ================= JOB DETAILS ================= */
+.dark-mode .job-details {
+  background: #0f172a;
+  border: 1px solid #334155;
+}
+
+.dark-mode .detail-item {
+  color: #cbd5e1;
+}
+
+.dark-mode .detail-item span {
+  color: #94a3b8;
+}
+
+/* ================= SCORE SECTION ================= */
+.dark-mode .score-section {
+  background: #0f172a;
+  border: 1px solid #334155;
+}
+
+.dark-mode .score-header strong {
+  color: #f1f5f9;
+}
+
+.dark-mode .score-label {
+  color: #cbd5e1;
+}
+
+.dark-mode .progress {
+  background: #334155;
+}
+
+/* ================= SKILLS SECTION ================= */
+.dark-mode .skills-section strong {
+  color: #f1f5f9;
+}
+
+.dark-mode .skill-tag {
+  background: #334155;
+  color: #cbd5e1;
+  border: 1px solid #475569;
+}
+
+.dark-mode .skill-tag.more {
+  background: #475569;
+  color: #94a3b8;
+}
+
+/* ================= BADGES ================= */
+.dark-mode .badge {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .badge-blue {
+  background: #1e40af;
+  color: #dbeafe;
+}
+
+.dark-mode .badge-purple {
+  background: #6d28d9;
+  color: #e9d5ff;
+}
+
+.dark-mode .badge-orange {
+  background: #c2410c;
+  color: #fed7aa;
+}
+
+.dark-mode .badge-green {
+  background: #047857;
+  color: #d1fae5;
+}
+
+.dark-mode .badge-red {
+  background: #b91c1c;
+  color: #fecaca;
+}
+
+.dark-mode .badge-gray {
+  background: #475569;
+  color: #cbd5e1;
+}
+
+/* ================= BUTTONS ================= */
+.dark-mode .btn {
+  background: #334155;
+  color: #e2e8f0;
+  border: 2px solid #475569;
+}
+
+.dark-mode .btn:hover {
+  background: #475569;
+  border-color: #64748b;
+}
+
+.dark-mode .btn-primary {
+  background: #3b82f6;
+  color: #ffffff;
+  border-color: #3b82f6;
+}
+
+.dark-mode .btn-primary:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.dark-mode .btn-secondary {
+  background: #64748b;
+  color: #ffffff;
+  border-color: #64748b;
+}
+
+.dark-mode .btn-secondary:hover {
+  background: #475569;
+  border-color: #475569;
+}
+
+.dark-mode .btn-outline {
+  background: transparent;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+}
+
+.dark-mode .btn-outline:hover {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+/* ================= MODAL ================= */
+.dark-mode .modal {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode .modal-content {
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+.dark-mode .modal-header {
+  border-bottom: 1px solid #334155;
+}
+
+.dark-mode .modal-header h3 {
+  color: #f1f5f9;
+}
+
+.dark-mode .close-btn {
+  background: #334155;
+  color: #e2e8f0;
+}
+
+.dark-mode .close-btn:hover {
+  background: #475569;
+  color: #ffffff;
+}
+
+.dark-mode .modal-body {
+  color: #cbd5e1;
+}
+
+.dark-mode .detail-section h5 {
+  color: #f1f5f9;
+  border-bottom: 2px solid #334155;
+}
+
+.dark-mode .detail-section p {
+  color: #cbd5e1;
+}
+
+.dark-mode .detail-title-row h4 {
+  color: #f1f5f9;
+}
+
+.dark-mode .detail-grid {
+  background: #0f172a;
+  border: 1px solid #334155;
+}
+
+.dark-mode .detail-grid .detail-item strong {
+  color: #f1f5f9;
+}
+
+.dark-mode .detail-grid .detail-item span {
+  color: #cbd5e1;
+}
+
+.dark-mode .score-display-large {
+  background: #0f172a;
+  border: 1px solid #334155;
+}
+
+.dark-mode .score-display-large span:first-child {
+  color: #f1f5f9;
+}
+
+.dark-mode .score-explanation {
+  color: #cbd5e1;
+}
+
+.dark-mode .modal-footer {
+  border-top: 1px solid #334155;
+}
+
+/* ================= COMPARISON GRID ================= */
+.dark-mode .comparison-grid {
+  gap: 20px;
+}
+
+.dark-mode .comparison-column {
+  background: #0f172a;
+  border: 1px solid #334155;
+}
+
+.dark-mode .comparison-column h4 {
+  color: #f1f5f9;
+  border-bottom: 2px solid #334155;
+}
+
+.dark-mode .comparison-item {
+  border-bottom: 1px solid #334155;
+}
+
+.dark-mode .comparison-item strong {
+  color: #f1f5f9;
+}
+
+.dark-mode .comparison-item span {
+  color: #cbd5e1;
+}
+
+.dark-mode .score-bar-small {
+  background: #334155;
+}
+
+/* ================= LOADING SPINNER ================= */
+.dark-mode .loading-spinner {
+  color: #cbd5e1;
+}
+
+.dark-mode .spinner {
+  border: 4px solid #334155;
+  border-top-color: #3b82f6;
+}
+
+.dark-mode .loading-spinner p {
+  color: #94a3b8;
+}
+
+/* ================= COMPARE CHECKBOX ================= */
+.dark-mode .compare-checkbox input[type="checkbox"] {
+  background: #334155;
+  border: 2px solid #475569;
+}
+
+.dark-mode .compare-checkbox input[type="checkbox"]:checked {
+  background: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.dark-mode .compare-checkbox input[type="checkbox"]:disabled {
+  background: #1e293b;
+  border-color: #334155;
+  opacity: 0.5;
+}
+
+/* ================= SCROLLBAR (DARK MODE) ================= */
+.dark-mode ::-webkit-scrollbar {
+  width: 12px;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 6px;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* ================= SELECT DROPDOWN ================= */
+.dark-mode select option {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+/* ================= INPUTS ================= */
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode input[type="search"],
+.dark-mode textarea {
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 2px solid #334155;
+}
+
+.dark-mode input[type="text"]:focus,
+.dark-mode input[type="email"]:focus,
+.dark-mode input[type="search"]:focus,
+.dark-mode textarea:focus {
+  border-color: #3b82f6;
+  background: #1e293b;
+}
+
+/* ================= LINKS ================= */
+.dark-mode a {
+  color: #60a5fa;
+}
+
+.dark-mode a:hover {
+  color: #93c5fd;
+}
+
+/* ================= TRANSITIONS ================= */
+.dark-mode * {
+  transition: background-color 0.3s ease, 
+              color 0.3s ease, 
+              border-color 0.3s ease;
+}
+
+/* ================= MEDIA QUERIES ================= */
+@media (max-width: 768px) {
+  .dark-mode .topbar {
+    padding: 15px;
+  }
+
+  .dark-mode .controls-section {
+    padding: 15px;
+  }
+
+  .dark-mode .modal-content {
+    margin: 10px;
+    max-width: calc(100% - 20px);
+  }
+}
+
+/* ================= ACCESSIBILITY ================= */
+.dark-mode :focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.dark-mode :focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* ================= PRINT (DARK MODE) ================= */
+@media print {
+  .dark-mode {
+    background: white !important;
+    color: black !important;
+  }
+
+  .dark-mode .application-card,
+  .dark-mode .stat-card,
+  .dark-mode .modal-content {
+    background: white !important;
+    color: black !important;
+    border: 1px solid #000 !important;
+  }
+}

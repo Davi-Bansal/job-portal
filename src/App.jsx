@@ -786,9 +786,9 @@ import { Component } from "react";
 
 import LandingPage from "./pages/LandingPage";
 import ProOfferPage from "./pages/ProOfferPage";
-import PublicJobs from "./pages/PublicJobs";
-import PublicCompanies from "./pages/PublicCompanies";
-import PublicServices from "./pages/PublicServices";
+import PublicJobs from "./pages/Publicjobs";
+import PublicCompanies from "./pages/Publiccompanies";
+import PublicServices from "./pages/Publicservices";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
